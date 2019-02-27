@@ -110,7 +110,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -187,15 +188,15 @@ h3, h2 {
 }
 
 label,
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   display: block;
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   height: 35px;
   padding: 0 10px;
@@ -207,7 +208,7 @@ textarea {
   height: 200px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   padding: 10px 30px;
   font-size: 18px;
   color: #ffffff;
@@ -216,40 +217,68 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (max-width:980px) {
-  .container{
+@media screen and (max-width: 980px) {
+  .container {
     width: 80%;
   }
 
-  .main-section{
+  .main-section {
     max-width: 650px;
   }
-  
+
+  ul {
+    list-style-type: none;
+  }
 }
 
-@media screen and (max-width:768px) {
-  .auth-image{
+@media screen and (max-width: 768px) {
+  .auth-image {
     width: 60%;
   }
+  /* portfolio */
+  .main-section {
+    max-width: 600px;
+  }
 
-  .main-section{
-    max-width: 650px;
+  .work {
+    width: 45%;
   }
 }
 
-@media screen and (max-width:640px) {
-  .container{
-    display: none;
+@media screen and (max-width: 640px) {
+  /* main */
+  /* .container{
+    width: 100%;
+  } */
+  .main-container {
+    width: 80%;
   }
-  .auth-image{
+  .auth-image {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .main-section{
-    max-width: 500px;
+  #logo {
+    width: 100%;
+    font-size: 80px;
+  }
+  #masthead {
+    background-color: #4aaaa5;
+    width: 100%;
   }
 
-  #logo{
+  nav {
+    float: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+  }
+
+  /* portfolio */
+  .main-section {
+    max-width: 500px;
+  }
+  .work {
     width: 100%;
+  }
 }
